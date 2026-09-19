@@ -1,51 +1,95 @@
 # 📊 Employee Attrition & HR Analytics
 
-An end-to-end Data Analyst portfolio project that analyzes employee attrition patterns using Python, SQL, MySQL, data visualization, and an interactive Streamlit dashboard.
+An end-to-end **Data Analyst portfolio project** that analyzes employee attrition patterns using **Python, SQL, MySQL, data visualization, and Streamlit**.
+
+The project explores how factors such as overtime, job satisfaction, salary, age, experience, job role, business travel, job level, and promotion history are associated with employee attrition.
 
 ---
 
 ## 📌 Project Overview
 
-Employee Attrition & HR Analytics is an end-to-end data analytics project developed to explore employee attrition patterns and understand how different HR-related factors are associated with employee turnover.
+Employee attrition is an important HR analytics problem that can affect workforce stability and organizational planning.
 
-The project follows a complete data analytics workflow, starting from dataset exploration and data cleaning, followed by exploratory analysis, SQL analysis, data visualization, and interactive dashboard development.
+This project analyzes an employee dataset to identify patterns in employee attrition and understand how different HR-related factors are associated with employees leaving the organization.
 
-The project uses:
+The project follows a complete data analytics workflow:
 
-- **Python** for data cleaning, analysis, and visualization
-- **Pandas and NumPy** for data manipulation
-- **Matplotlib and Seaborn** for visualization
-- **MySQL and SQL** for database analysis
-- **Streamlit** for the interactive dashboard
+**Data Collection → Data Cleaning → Exploratory Data Analysis → SQL Analysis → Data Visualization → Dashboard Development → Business Insights**
 
 ---
 
 ## 🎯 Project Objective
 
-The main objective of this project is to analyze employee attrition and explore patterns associated with different HR factors.
+The main objectives of this project are:
 
-The analysis focuses on:
-
-- Employee attrition
-- Department
-- Job role
-- Overtime
-- Job satisfaction
-- Work-life balance
-- Monthly income
-- Age
-- Years at company
-- Business travel
-- Job level
-- Promotion history
-
-The project demonstrates how data analytics can be used to explore HR data, identify patterns, and communicate findings through an interactive dashboard.
+- Analyze overall employee attrition.
+- Calculate the employee attrition rate.
+- Identify HR factors associated with employee attrition.
+- Analyze attrition across departments and job roles.
+- Examine the relationship between overtime and attrition.
+- Analyze job satisfaction and work-life balance.
+- Study salary and compensation patterns.
+- Analyze age and years of experience.
+- Examine business travel and job levels.
+- Analyze promotion history.
+- Build an interactive HR analytics dashboard.
 
 ---
 
-## 🔄 Project Workflow
+## 🛠️ Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| Python | Data analysis and processing |
+| Pandas | Data manipulation |
+| NumPy | Numerical operations |
+| Matplotlib | Data visualization |
+| Seaborn | Statistical visualization |
+| SQL | Data analysis and querying |
+| MySQL | Database management |
+| Streamlit | Interactive dashboard |
+| VS Code | Development environment |
+| GitHub | Project version control |
+
+---
+
+## 📂 Project Structure
 
 ```text
+Employee-Attrition-HR-Analytics/
+│
+├── charts/
+│   ├── age_group_attrition.png
+│   ├── business_travel_attrition.png
+│   ├── department_attrition.png
+│   ├── experience_attrition.png
+│   ├── job_satisfaction_attrition.png
+│   ├── joblevel_attrition.png
+│   ├── jobrole_attrition.png
+│   ├── overall_attrition.png
+│   ├── overtime_attrition.png
+│   ├── promotion_attrition.png
+│   ├── salary_attrition.png
+│   └── worklife_balance_attrition.png
+│
+├── dashboard/
+│   └── dashboard.py
+│
+├── data/
+│   └── WA_Fn-UseC_-HR-Employee-Attrition.csv
+│
+├── python/
+│   ├── analysis.py
+│   ├── data_cleaning.py
+│   └── visualization.py
+│
+├── sql/
+│   └── analysis.sql
+│
+└── README.md
+
+Project Workflow
+
 Dataset
    ↓
 Data Loading
@@ -56,130 +100,77 @@ Exploratory Data Analysis
    ↓
 SQL Analysis using MySQL
    ↓
-Python Data Visualization
+Data Visualization
    ↓
 Interactive Streamlit Dashboard
    ↓
-HR Analytics Insights
-   ↓
-Portfolio Presentation
+Business Insights
 
+📊 Dataset
 
-Employee-Attrition-HR-Analytics/
-│
-├── charts/
-│   ├── overall_attrition.png
-│   ├── department_attrition.png
-│   ├── overtime_attrition.png
-│   ├── age_group_attrition.png
-│   ├── job_satisfaction_attrition.png
-│   ├── worklife_balance_attrition.png
-│   ├── salary_attrition.png
-│   ├── jobrole_attrition.png
-│   ├── experience_attrition.png
-│   ├── business_travel_attrition.png
-│   ├── joblevel_attrition.png
-│   └── promotion_attrition.png
-│
-├── dashboard/
-│   └── dashboard.py
-│
-├── python/
-│   ├── data_cleaning.py
-│   ├── analysis.py
-│   └── visualization.py
-│
-├── sql/
-│   └── analysis.sql
-│
-└── README.md
-
-Technologies Used
-
-Programming & Data Analysis
-Python
-Pandas
-NumPy
-
-Data Visualization
-Matplotlib
-Seaborn
-
-Database
-MySQL
-SQL
-
-Dashboard
-Streamlit
-
-Development Tools
-Visual Studio Code
-MySQL Workbench
-
-Dataset
 The project uses the IBM HR Analytics Employee Attrition & Performance practice dataset.
-The dataset contains employee-related attributes such as:
 
-Age
-Attrition
-Business Travel
-Department
-Distance From Home
-Education
-Education Field
-Environment Satisfaction
-Job Involvement
-Job Level
-Job Role
-Job Satisfaction
-Monthly Income
-Overtime
-Performance Rating
-Relationship Satisfaction
-Total Working Years
-Work-Life Balance
-Years at Company
-Years in Current Role
-Years Since Last Promotion
-Years With Current Manager
+The dataset contains:
+1,470 employee records
+35 columns
+Employee demographics
+Job information
+Compensation information
+Satisfaction metrics
+Work-related information
+Attrition status
 
-Dataset Information
-Total Records: 1,470
-Total Columns: 35
-Missing Values: 0
+🧹 Data Cleaning & Validation
+The dataset was loaded and checked using Python and Pandas.
 
-Data Cleaning
+The following checks were performed:
+Dataset dimensions
+Column names
+Missing values
+Data types
+Categorical variables
+Numerical variables
+Attrition values
 
-Python and Pandas were used to perform the initial data inspection and validation.
+🐍 Python Analysis
 
-The data cleaning process included:
-Loading the CSV dataset
-Inspecting the first few records
-Checking dataset dimensions
-Checking column names
-Checking missing values
-Validating the dataset structure
-Preparing the dataset for further analysis
+Python was used for exploratory analysis and data processing.
 
-The dataset contains 1,470 records and 35 columns, with no missing values.
-
-Python Data Analysis
-
-Python was used to perform exploratory analysis on the HR dataset.
-
-The analysis included:
-Total employee count
-Overall attrition count
+Main analysis areas
+Overall employee attrition
 Department distribution
 Job role distribution
-Average monthly income by attrition
-Overtime vs attrition
-Job satisfaction vs attrition
-Work-life balance vs attrition
+Average monthly income
+Overtime and attrition
+Job satisfaction
+Work-life balance
+Age groups
+Years at company
+Business travel
+Job level
+Promotion history
 
-SQL Analysis Performed
+Python Files
 
-Overall attrition
+data_cleaning.py
+Loads the dataset and performs initial data validation.
+
+analysis.py
+Performs exploratory analysis and calculates important HR metrics.
+
+visualization.py
+Creates visualizations for different HR factors and attrition patterns.
+
+🗄️ SQL Analysis
+
+The dataset was imported into MySQL for structured analysis.
+
+Database
+CREATE DATABASE hr_analytics;
+Main SQL Analysis
+
+The project includes SQL queries for:
+Overall attrition rate
 Department-wise attrition
 Overtime vs attrition
 Salary vs attrition
@@ -192,12 +183,13 @@ Job role vs attrition
 Business travel vs attrition
 Job level vs attrition
 
+SQL queries are available in:
+sql/analysis.sql
 
-Data Visualization
+📈 Data Visualization
 
-Python was used to create 12 visualizations to explore different employee attrition patterns.
+The project contains 12 visualizations:
 
-Visualizations Created
 Overall Employee Attrition
 Department-wise Attrition
 Overtime vs Attrition
@@ -211,26 +203,95 @@ Business Travel vs Attrition
 Job Level vs Attrition
 Promotion History vs Attrition
 
-Interactive Streamlit Dashboard
+The generated charts are stored in:
+charts/
 
-An interactive dashboard was developed using Streamlit to allow users to explore the HR dataset through filters, KPIs, charts, and insights.
+🖥️ Interactive Streamlit Dashboard
+
+The project includes an interactive Streamlit HR Analytics Dashboard.
 
 Dashboard KPIs
+
+The dashboard displays:
+
 Total Employees
 Employees Left
 Attrition Rate
 Average Monthly Income
 Dashboard Filters
+
+Users can filter the analysis by:
+
 Department
 Job Role
 Overtime
 Attrition
-Dashboard Analysis Sections
-Department Analysis
-Work Conditions & Satisfaction
-Employee Demographics & Experience
-Job Role & Compensation
-Business Travel & Career Patterns
+Dashboard Analysis
+
+The dashboard provides interactive analysis of:
+
+Department
+Overtime
+Job Satisfaction
+Age Group
+Years at Company
+Job Role
+Monthly Income
+Business Travel
+Job Level
 Promotion History
-HR Analytics Insights
-Employee Data Preview
+
+It also provides an employee data preview and dynamically updates the displayed metrics based on selected filters.
+
+🔍 Key Findings
+
+Based on the analysis of the dataset:
+
+Overall Attrition
+Total employees: 1,470
+Employees recorded as having left: 237
+Overall attrition rate: 16.12%
+Overtime
+
+Employees with overtime had a recorded attrition rate of approximately 30.53%, compared with 10.44% among employees without overtime.
+
+Salary
+Average monthly income:
+
+Employees who left: 4,787
+Employees who stayed: 6,833
+Age
+The recorded attrition rate was highest among employees under 25, at approximately 39.18%.
+
+Experience
+Employees with 0–2 years at the company had a recorded attrition rate of approximately 29.82%.
+Business Travel
+The recorded attrition rates were:
+Travel Frequently: 24.91%
+Travel Rarely: 14.96%
+Non-Travel: 8.00%
+Job Role
+
+Some job roles showed substantially different recorded attrition rates. For example:
+
+Sales Representative: 39.76%
+Laboratory Technician: 23.94%
+Human Resources: 23.08%
+Manager: 4.90%
+Research Director: 2.50%
+
+These results describe associations within this practice dataset and do not establish that any individual factor causes attrition.
+
+💡 Business Insights
+
+The analysis highlights several areas that HR teams could investigate further:
+
+Overtime patterns may be useful for workforce planning.
+Early-tenure employees show different attrition patterns from longer-tenured employees.
+Compensation levels differ between employees who stayed and those recorded as having left.
+Attrition patterns vary across job roles.
+Business travel frequency is associated with different attrition rates.
+Job satisfaction and work-life balance provide additional dimensions for understanding employee turnover patterns.
+
+These observations are descriptive and should be combined with additional organizational data before making HR decisions.
+
