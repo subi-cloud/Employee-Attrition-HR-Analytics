@@ -76,7 +76,7 @@ Employee-Attrition-HR-Analytics/
 │   └── dashboard.py
 │
 ├── data/
-│   └── WA_Fn-UseC_-HR-Employee-Attrition.csv
+│   └──README.md
 │
 ├── python/
 │   ├── analysis.py
